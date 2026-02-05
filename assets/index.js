@@ -17174,9 +17174,17 @@ const hz = () => {
                     }), y.jsx("div", {
                         className: "glass p-8 rounded-2xl border border-black/5 dark:border-white/5 bg-white/50 dark:bg-white/5 backdrop-blur-md",
                         children: y.jsxs("form", {
-                            onSubmit: i,
-                            className: "space-y-6",
-                            children: [y.jsxs("div", {
+                                name: "contact",
+                                method: "POST",
+                                "data-netlify": "true",
+                                className: "space-y-6",
+                            children: [
+                                y.jsx("input", {
+                                type: "hidden",
+                                name: "form-name",
+                                value: "contact"
+                                }),
+                                y.jsxs("div", {
                                 children: [y.jsx("label", {
                                     htmlFor: "name",
                                     className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
