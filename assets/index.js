@@ -17174,107 +17174,74 @@ const hz = () => {
                     }), y.jsx("div", {
                         className: "glass p-8 rounded-2xl border border-black/5 dark:border-white/5 bg-white/50 dark:bg-white/5 backdrop-blur-md",
                         children: y.jsxs("form", {
-    name: "contact",
-    method: "POST",                     // ✅ added
-    "data-netlify": "true",              // ✅ added
-    "data-netlify-honeypot": "bot-field",// ✅ added
-    className: "space-y-6",
-    children: [
-
-        // ✅ REQUIRED hidden inputs for Netlify
-        y.jsx("input", {
-            type: "hidden",
-            name: "form-name",
-            value: "contact"
-        }),
-        y.jsx("input", {
-            type: "hidden",
-            name: "bot-field"
-        }),
-
-        y.jsxs("div", {
-            children: [
-                y.jsx("label", {
-                    htmlFor: "name",
-                    className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
-                    children: "Name"
-                }),
-                y.jsx("input", {
-                    type: "text",
-                    id: "name",
-                    name: "name",
-                    value: e.name,
-                    onChange: s,
-                    className: "w-full bg-white dark:bg-dark/50 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder-gray-400 dark:placeholder-gray-600",
-                    placeholder: "Your Name",
-                    required: !0
-                })
-            ]
-        }),
-
-        y.jsxs("div", {
-            children: [
-                y.jsx("label", {
-                    htmlFor: "email",
-                    className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
-                    children: "Email"
-                }),
-                y.jsx("input", {
-                    type: "email",
-                    id: "email",
-                    name: "email",
-                    value: e.email,
-                    onChange: s,
-                    className: "w-full bg-white dark:bg-dark/50 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder-gray-400 dark:placeholder-gray-600",
-                    placeholder: "your@email.com",
-                    required: !0
-                })
-            ]
-        }),
-
-        y.jsxs("div", {
-            children: [
-                y.jsx("label", {
-                    htmlFor: "message",
-                    className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
-                    children: "Message"
-                }),
-                y.jsx("textarea", {
-                    id: "message",
-                    name: "message",
-                    value: e.message,
-                    onChange: s,
-                    rows: "4",
-                    className: "w-full bg-white dark:bg-dark/50 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder-gray-400 dark:placeholder-gray-600 resize-none",
-                    placeholder: "Tell me about your project...",
-                    required: !0
-                })
-            ]
-        }),
-
-        y.jsxs("button", {
-            type: "submit",
-            disabled: n,
-            className: "w-full bg-gradient-to-r from-primary to-accent text-dark font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all flex items-center justify-center transform hover:-translate-y-1 disabled:opacity-70 disabled:cursor-not-allowed",
-            children: [
-                y.jsx(se.div, {
-                    animate: n ? {
-                        x: [0, 100, -100, 0],
-                        opacity: [1, 0, 0, 1]
-                    } : {},
-                    transition: {
-                        duration: 1.5,
-                        times: [0, .4, .41, 1]
-                    },
-                    className: "mr-2",
-                    children: y.jsx(g0, { size: 18 })
-                }),
-                n ? "Sending..." : "Send Message"
-            ]
-        })
-    ]
-})
-
+                                name: "contact",
+                                className: "space-y-6",
+                            children: [
+                                y.jsxs("div", {
+                                children: [y.jsx("label", {
+                                    htmlFor: "name",
+                                    className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
+                                    children: "Name"
+                                }), y.jsx("input", {
+                                    type: "text",
+                                    id: "name",
+                                    name: "name",
+                                    value: e.name,
+                                    onChange: s,
+                                    className: "w-full bg-white dark:bg-dark/50 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder-gray-400 dark:placeholder-gray-600",
+                                    placeholder: "Your Name",
+                                    required: !0
+                                })]
+                            }), y.jsxs("div", {
+                                children: [y.jsx("label", {
+                                    htmlFor: "email",
+                                    className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
+                                    children: "Email"
+                                }), y.jsx("input", {
+                                    type: "email",
+                                    id: "email",
+                                    name: "email",
+                                    value: e.email,
+                                    onChange: s,
+                                    className: "w-full bg-white dark:bg-dark/50 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder-gray-400 dark:placeholder-gray-600",
+                                    placeholder: "your@email.com",
+                                    required: !0
+                                })]
+                            }), y.jsxs("div", {
+                                children: [y.jsx("label", {
+                                    htmlFor: "message",
+                                    className: "block text-sm font-medium text-gray-700 dark:text-gray-400 mb-2",
+                                    children: "Message"
+                                }), y.jsx("textarea", {
+                                    id: "message",
+                                    name: "message",
+                                    value: e.message,
+                                    onChange: s,
+                                    rows: "4",
+                                    className: "w-full bg-white dark:bg-dark/50 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-gray-900 dark:text-white focus:outline-none focus:border-accent focus:ring-1 focus:ring-accent transition-all placeholder-gray-400 dark:placeholder-gray-600 resize-none",
+                                    placeholder: "Tell me about your project...",
+                                    required: !0
+                                })]
+                            }), y.jsxs("button", {
+                                type: "submit",
+                                disabled: n,
+                                className: "w-full bg-gradient-to-r from-primary to-accent text-dark font-bold py-3 rounded-lg hover:shadow-lg hover:shadow-accent/25 transition-all flex items-center justify-center transform hover:-translate-y-1 disabled:opacity-70 disabled:cursor-not-allowed",
+                                children: [y.jsx(se.div, {
+                                    animate: n ? {
+                                        x: [0, 100, -100, 0],
+                                        opacity: [1, 0, 0, 1]
+                                    } : {},
+                                    transition: {
+                                        duration: 1.5,
+                                        times: [0, .4, .41, 1]
+                                    },
+                                    className: "mr-2",
+                                    children: y.jsx(g0, {
+                                        size: 18
+                                    })
+                                }), n ? "Sending..." : "Send Message"]
+                            })]
+                        })
                     })]
                 })]
             })
