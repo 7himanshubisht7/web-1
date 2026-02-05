@@ -17177,6 +17177,7 @@ const hz = () => {
                                 name: "contact",
                                 method: "POST",
                                 "data-netlify": "true",
+                                action: "/",
                                 className: "space-y-6",
                             children: [
                                 y.jsx("input", {
