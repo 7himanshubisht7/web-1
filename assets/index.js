@@ -17161,7 +17161,7 @@ const hz = () => {
                                         children: "GitHub"
                                     }), y.jsx("p", {
                                         className: "text-gray-900 dark:text-white font-medium",
-                                        children: "https://github.com/7himanshubisht7"
+                                        children: "7himanshubisht7"
                                     })]
                                 })]
                             }), y.jsxs("div", {
