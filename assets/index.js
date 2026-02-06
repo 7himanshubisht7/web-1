@@ -17059,21 +17059,32 @@ const hz = () => {
         email: "",
         message: ""
     })
-      , [n,r] = w.useState(!1)
-      , i = o => {
-        o.preventDefault(),
-        r(!0),
-        setTimeout( () => {
-            console.log("Form submitted:", e),
-            t({
-                name: "",
-                email: "",
-                message: ""
-            }),
-            r(!1)
-        }
-        , 2e3)
-    }
+      , [n,r] = w.useState(!1) //*** */
+      ,  i = (o) => {
+  o.preventDefault();
+  r(true);
+
+  const formData = new FormData(o.target);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString()
+  })
+    .then(() => {
+      t({
+        name: "",
+        email: "",
+        message: ""
+      });
+      r(false);
+      alert("Message sent successfully ");
+    })
+    .catch(() => {
+      r(false);
+      alert("Something went wrong ");
+    });
+} //*** */
       , s = o => {
         t({
             ...e,
@@ -17174,9 +17185,24 @@ const hz = () => {
                     }), y.jsx("div", {
                         className: "glass p-8 rounded-2xl border border-black/5 dark:border-white/5 bg-white/50 dark:bg-white/5 backdrop-blur-md",
                         children: y.jsxs("form", {
-                                name: "contact",
-                                className: "space-y-6",
-                            children: [
+                                    name: "contact",
+                                    method: "POST",
+                                    "data-netlify": "true",
+                                    "data-netlify-honeypot": "bot-field",
+                                    onSubmit: i,
+                                    className: "space-y-6",
+                                children: [
+                                y.jsx("input", {
+                                type: "hidden",
+                                name: "form-name",
+                                value: "contact"
+                                }),
+
+                                y.jsx("input", {
+                                type: "hidden",
+                                name: "bot-field"
+                                }),
+
                                 y.jsxs("div", {
                                 children: [y.jsx("label", {
                                     htmlFor: "name",
