@@ -16413,9 +16413,9 @@ const hz = () => {
                     className: "text-xl md:text-2xl font-medium text-accent mb-4 tracking-wider",
                     children: "HELLO, I'M"
                 }), y.jsxs("h1", {
-                    className: "text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 tracking-tight h-[1.2em]",
+                    className: "text-5xl md:text-7xl lg:text-8xl font-heading font-bold mb-6 tracking-tight min-h-[2.4em] md:min-h-[1.2em]]",
                     children: [" ", y.jsx("span", {
-                        className: "gradient-text",
+                        className: "gradient-text inline-block",
                         children: e
                     }), y.jsx("span", {
                         className: "animate-pulse text-gray-900 dark:text-white",
