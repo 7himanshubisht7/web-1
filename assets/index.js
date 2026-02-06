@@ -9729,7 +9729,7 @@ const _0 = [["path", {
                 children: "HIMANSHU.DEV"
             }), y.jsx("p", {
                 className: "text-gray-400 text-sm mt-2",
-                children: "Building the future with AI & Cybersecurity."
+                children: "Building the future with AI & ML."
             })]
         }), y.jsxs("div", {
             className: "flex space-x-6",
