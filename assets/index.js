@@ -16640,8 +16640,8 @@ const hz = () => {
       "A real-time face recognition system built using advanced computer vision and machine learning techniques, achieving high accuracy and optimized performance for multi-face detection.",
     tags: ["Python", "OpenCV", "DeepFace", "NumPy", "Pandas", "Computer Vision"],
     links: {
-      github: "#",
-      live: "#"
+      github: "https://github.com/7himanshubisht7",
+      live: "https://colab.research.google.com/drive/1-gz9RQaSMQKhitrlVcXkJu6iwo_ZDou5"
     },
     image: kz,
     status: "Completed"
@@ -16652,8 +16652,8 @@ const hz = () => {
       "A full-stack travel coordination platform designed to simplify bookings and planning through a responsive UI, optimized backend, and interactive user experience.",
     tags: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
     links: {
-      github: "#",
-      live: "#"
+      github: "https://github.com/7himanshubisht7",
+      live: "https://readygo-self.vercel.app/"
     },
     image: xz,
     status: "Completed"
@@ -16664,8 +16664,8 @@ const hz = () => {
       "A machine learning-powered healthcare application that predicts disease risk based on patient data, improving early diagnosis through data analysis and model optimization.",
     tags: ["Python", "Scikit-Learn", "Pandas", "NumPy", "Streamlit", "Machine Learning"],
     links: {
-      github: "#",
-      live: "#"
+      github: "https://github.com/7himanshubisht7",
+      live: "https://colab.research.google.com/drive/18lwtiRhuV7St83G7SvFM6aA8VYQDfaZu"
     },
     image: wz,
     status: "Completed"
@@ -16676,8 +16676,8 @@ const hz = () => {
       "A comprehensive self-learning platform with gamified modules, optimized database performance, and seamless multimedia delivery for large-scale user engagement.",
     tags: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "Bootstrap"],
     links: {
-      github: "#",
-      live: "#"
+      github: "https://github.com/7himanshubisht7",
+      live: "https://www.linkedin.com/in/himanshu-bisht-641414251/overlay/projects/593037257/multiple-media-viewer/?profileId=ACoAAD4s75EBFJ5l97xmmjRpHCdEX9Lsf1HK7qg&treasuryMediaId=1737907453279"
     },
     image: z,
     status: "Completed"
@@ -16688,8 +16688,8 @@ const hz = () => {
       "A web-based courier service platform focused on delivery optimization, secure transactions, and scalable logistics architecture. Patent work in progress.",
     tags: ["HTML5", "CSS3", "JavaScript", "PHP", "MySQL", "API Integration"],
     links: {
-      github: "#",
-      live: "#"
+      github: "https://github.com/7himanshubisht7",
+      live: "https://project-courier.vercel.app/"
     },
     image: a,
     status: "In Progress"
@@ -16782,7 +16782,7 @@ const hz = () => {
                                 children: [y.jsx(l0, {
                                     size: 16,
                                     className: "mr-2"
-                                }), " Live Demo"]
+                                }), " Link"]
                             })]
                         })]
                     })]
